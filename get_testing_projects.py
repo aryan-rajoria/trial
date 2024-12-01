@@ -34,20 +34,25 @@ elixir = [
 
 ]
 go = [
-    ["https://github.com/DylanMeeus/GoAudio.git", "true"],
-    ["https://github.com/dh1tw/gosamplerate.git", "true"],
-    ["https://github.com/ergo-services/ergo.git", "true"],
-    ["https://github.com/anthdm/hollywood.git", "true"],
-
+    # ["https://github.com/DylanMeeus/GoAudio.git", "true"],
+    # ["https://github.com/dh1tw/gosamplerate.git", "true"],
+    # ["https://github.com/ergo-services/ergo.git", "true"],
+    # ["https://github.com/anthdm/hollywood.git", "true"],
+    ["https://github.com/restic/restic.git", "go run build.go"],
+    ["https://github.com/syncthing/syncthing.git", "go run build.go"],
 ]
 haskell = [
 
 ]
 java = [
-
+    ["https://github.com/plantuml/plantuml.git", "gradle clean build -x javaDoc -PjavacRelease=17"],
+    ["https://github.com/CodeIntelligenceTesting/jazzer.git", "sdk use java 8.0.432-tem; bazelisk build //:jazzer_release"],
+    ["	https://github.com/JoyChou93/java-sec-code.git", "sdk use java 8.0.432-tem; mvn -B clean compile -DskipTests=true"],
 ]
 javascript = [
-
+    ["https://github.com/withastro/astro.git", "pnpm install"],
+    ["https://github.com/prettier/prettier.git", "corepack enable yarn;yarn install"],
+    ["https://github.com/anuraghazra/github-readme-stats.git", "npm install ."],
 ]
 php = [
 
